@@ -4,7 +4,7 @@
 int main() {
   double a,b;
   printf("Podaj 2 liczby\n");
-  scanf("%lf %lf", a, b );
+  scanf("%lf %lf", &a, &b );
   printf("%d\n", a+b); //dodawanie
   printf("%d\n", a-b); //odejmowanie
   printf("%d\n", a*b); //mnożenie
