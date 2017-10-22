@@ -4,7 +4,7 @@ int main() {
   double deg,rad;
   printf("daj kąt w stopniach");
   scanf("%lf\n", &deg);
-  rad = deg/180;
-  printf("%lf deg = %lfπ rad \n", deg, rad);
+  rad = 2*M_PI*deg/360;
+  printf("%lf deg = %lf rad \n", deg, rad);
   return 0;
 }
