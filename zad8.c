@@ -2,24 +2,27 @@
 #include <math.h>
 
 int main() {
-  printf("%d\n", 2+2); //dodawanie
-  printf("%d\n", 2-2); //odejmowanie
-  printf("%d\n", 2*2); //mnożenie
-  printf("%d\n", 2/2); //dzielenie
-  printf("%d\n", 2|2); //
-  printf("%d\n", 2&2); //
-  printf("%d\n", 2||2); //
-  printf("%d\n", 2&&2); //
+  double a,b;
+  printf("Podaj 2 liczby\n");
+  scanf("%lf %lf", a, b );
+  printf("%d\n", a+b); //dodawanie
+  printf("%d\n", a-b); //odejmowanie
+  printf("%d\n", a*b); //mnożenie
+  printf("%d\n", a/b); //dzielenie
+  printf("%d\n", (int)a|(int)b); //
+  printf("%d\n", (int)a&(int)b); //
+  printf("%d\n", a||b); //
+  printf("%d\n", a&&b); //
 
   //0 - fałsz
   //1 - prawda
-  printf("%d\n", 2>=2); //wieksze równe
-  printf("%d\n", 2<2); //mniejsze
-  printf("%d\n", 2>2); //wieksze
-  printf("%d\n", 2==2); //równe
-  printf("%d\n", 2>=2); //wieksze równe
+  printf("%d\n", a>=b); //wieksze równe
+  printf("%d\n", a<b); //mniejsze
+  printf("%d\n", a>b); //wieksze
+  printf("%d\n", a==b); //równe
+  printf("%d\n", a>=b); //wieksze równe
 
-  printf("%d\n", 2>>2); //przesuniecie bitowe w prawo
-  printf("%d\n", 2<<2); //przesuniecie bitowe w lewo
+  printf("%d\n", (int)a>>(int)b); //przesuniecie bitowe w prawo
+  printf("%d\n", (int)a<<(int)b); //przesuniecie bitowe w lewo
   return 0;
 }
